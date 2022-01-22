@@ -1,0 +1,50 @@
+
+.ui{
+    
+    .segments{
+      span{
+            font-size: 14px;
+            font-weight: 600;
+            color: #040456;
+        }
+        .segment{
+            display: flex;
+            justify-content: space-between;
+         
+            div{
+                display: flex;
+                i{
+                    cursor: pointer;
+                    &:first-child{
+                        margin-right: 20px;
+                    }
+                }
+        
+                p{
+                    margin-left: 20px;
+
+                }
+
+                .chevron{
+              
+                    transition: all .4s ease;
+                    &.transform{
+                        transform: scaleY(-1);
+                        margin-top: 3px;
+                      
+                    }
+                }
+                
+            }
+            &.notActive{
+                display:none;
+                opacity: 0;
+                visibility: hidden;
+         
+                
+            }
+        }
+
+    
+    }
+}
